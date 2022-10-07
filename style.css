@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    font-size: 40px;
+    font-family: cursive;
+}
+.form{
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    width: 400px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    border: none;
+    font-family: cursive;
+}
+.input::placeholder{
+    color: lightgrey;
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: cursive;
+    word-wrap: break-word ;
+    border-top: dotted;
+    border-color: lightgray;
+    position : relative;
+}
+.list li .fa-trash{
+    color: red;  
+    right: 20px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    word-wrap: break-word;
+}
+.list li .fa-circle-check{
+    color: green;
+    right: 40px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    word-wrap: break-word;
+}
+.list li.checked{
+    color: darkgray;
+    text-decoration:  line-through;
+    word-wrap: break-word;
+}
+.list li.checked .fa-circle-check{
+    color: darkgray;
+    text-decoration: line-through;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
